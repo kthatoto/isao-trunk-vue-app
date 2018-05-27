@@ -1,16 +1,26 @@
 <template>
-  <div class="app">
+  <div>
+    <Header/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header'
 export default {
-  name: 'App'
+  components: { Header }
 }
 </script>
 
 <style>
-.app {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Noto Sans Japanese';
+}
+a, a:visited {
+  color: inherit;
 }
 </style>
