@@ -1,14 +1,15 @@
 <template>
   <div class="top">
-    <h1>{{ message }}</h1>
+    <Keyvisual/>
   </div>
 </template>
 
 <script>
+import Keyvisual from '@/components/Keyvisual'
 export default {
+  components: { Keyvisual },
   data () {
     return {
-      message: 'Welcome to Your Vue.js App'
     }
   }
 }
