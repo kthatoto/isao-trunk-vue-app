@@ -2,7 +2,7 @@
   <div class="skills">
     <h2>SKILLS</h2>
     <ul class="skills__list">
-      <li v-for="skill in skills" class="skills__item">{{ skill }}</li>
+      <li v-for="skill in skills" class="skills__item" :key="skill">{{ skill }}</li>
     </ul>
   </div>
 </template>
