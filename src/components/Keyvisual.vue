@@ -23,7 +23,7 @@ export default {
 .keyvisual {
   height: auto;
   min-height: 400px;
-  background-color: green;
+  background-color: mediumaquamarine;
   position: relative;
   &__image {
     width: 200px;
