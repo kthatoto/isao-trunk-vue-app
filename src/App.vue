@@ -19,6 +19,7 @@ export default {
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Noto Sans Japanese';
+  list-style: none;
 }
 a, a:visited {
   color: inherit;
