@@ -2,7 +2,9 @@
   <div class="works">
     <h2>WORKS</h2>
     <div class="works__selected">
-      <img :src="require(`@/assets/${works[selectedWorkIndex].image}`)" class="works__headImage">
+      <div class="works__head">
+        <img :src="require(`@/assets/${works[selectedWorkIndex].image}`)" class="works__headImage">
+      </div>
       <h3>{{ works[selectedWorkIndex].title }}</h3>
       <p class="works__description">{{ works[selectedWorkIndex].description }}</p>
     </div>
@@ -33,9 +35,9 @@ export default {
         },
         {
           id: 2,
-          title: '猫じゃらし',
-          description: '',
-          image: 'nekojarashi.png'
+          title: 'キャットタワー',
+          description: ' 猫のグッズ。大きさや高さは色々ある。麻縄が巻いてあると爪磨ぎもできる。飛び乗ったり飛び降りたりと、上下運動が出来て、運動不足解消にも役立つ。',
+          image: 'cattower.jpg'
         },
         {
           id: 3,
@@ -71,14 +73,30 @@ export default {
 .works h2 {
   margin-bottom: 30px;
 }
+.works__head {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
 .works__headImage {
   border-radius: 5px;
   max-width: 500px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .works__description {
   width: 500px;
   margin: 0 auto;
   text-align: left;
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  padding: 5px;
 }
 .works__list {
   width: 900px;
