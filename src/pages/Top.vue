@@ -3,6 +3,7 @@
     <Keyvisual/>
     <Skills/>
     <Works/>
+    <Footer/>
   </div>
 </template>
 
@@ -10,8 +11,9 @@
 import Keyvisual from '@/components/Keyvisual'
 import Skills from '@/components/Skills'
 import Works from '@/components/Works'
+import Footer from '@/components/Footer'
 export default {
-  components: { Keyvisual, Skills, Works },
+  components: { Keyvisual, Skills, Works, Footer },
   data () {
     return {
     }
